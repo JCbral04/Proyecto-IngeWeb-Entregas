@@ -115,7 +115,7 @@ Este enfoque separa responsabilidades y facilita escalabilidad y mantenimiento.
 ---------------------------
 
 ### Estructura general FRONTEND (React)
-'''
+```
 FRONTEND/
 ├── public/
 │   ├── favicon.ico               # Ícono del sitio
@@ -180,7 +180,7 @@ FRONTEND/
 ├── postcss.config.js
 ├── eslint.config.js
 └── README.md
-'''
+```
 
 ### Explicación
 
@@ -199,7 +199,7 @@ FRONTEND/
 **theme/**Gestión del tema visual y configuraciones globales.
 
 ### Estructura general SERVER (Node.js + Express)
-'''
+```
 SERVER/
 ├── config/                       # Configuraciones globales del backend
 │   └── db.js                     # Conexión a MongoDB
@@ -221,7 +221,7 @@ SERVER/
 ├── index.js                      # Punto de entrada del servidor Express
 ├── package.json
 └── README.md
-'''
+```
 
 ### Explicación
 
