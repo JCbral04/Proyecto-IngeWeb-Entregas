@@ -257,7 +257,7 @@ Esta estructura promueve una organización clara entre datos, lógica y endpoint
 
 Representación en texto:
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   Frontend (React) -> API (Rutas) -> Controlador -> Modelo -> MongoDB  Frontend <- JSON <- Controlador   `
+`   Frontend (React) -> API (Rutas) -> Controlador -> Modelo -> MongoDB  Frontend <- JSON <- Controlador   `
 
 9\. Contrato de la API (Resumen)
 --------------------------------
