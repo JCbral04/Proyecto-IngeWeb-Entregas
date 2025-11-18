@@ -115,8 +115,72 @@ Este enfoque separa responsabilidades y facilita escalabilidad y mantenimiento.
 ---------------------------
 
 ### Estructura general FRONTEND (React)
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   FRONTEND/  ├── public/  │   ├── favicon.ico               # Ícono del sitio  │   └── index.html                # Plantilla base de la SPA  │  ├── src/  │   ├── assets/                   # Imágenes, logos, fuentes y recursos estáticos  │   │   └── (recursos gráficos del proyecto)  │   │  │   ├── components/               # Componentes reutilizables de UI y funcionalidad  │   │   ├── EstadoPaquete.jsx  │   │   ├── FormularioRastreo.jsx  │   │   ├── MapaRastreo.jsx  │   │   ├── MapaRepartidores.jsx  │   │   ├── PaqueteForm.jsx  │   │   ├── PaquetesTable.jsx  │   │   │  │   │   ├── layout/               # Estructura visual del panel administrativo  │   │   │   ├── MainLayout.jsx  │   │   │   ├── Navbar.jsx  │   │   │   └── Sidebar.jsx  │   │   │  │   │   └── ui/                   # Componentes atómicos reutilizables  │   │       ├── Button.jsx  │   │       ├── Card.jsx  │   │       └── FormInput.jsx  │   │  │   ├── hooks/                    # Hooks personalizados para lógica del frontend  │   │   ├── usePaquetes.js  │   │   └── useRepartidores.js  │   │  │   ├── pages/                    # Vistas asociadas a las rutas del sistema  │   │   ├── AdminDashboard.jsx  │   │   ├── Clientes.jsx  │   │   ├── Configuracion.jsx  │   │   ├── Dashboard.jsx  │   │   ├── Incidencias.jsx  │   │   ├── Mapa.jsx  │   │   ├── PaginaRastreo.jsx  │   │   ├── Paquetes.jsx  │   │   ├── Rastreo.jsx  │   │   ├── Repartidores.jsx  │   │   └── Reportes.jsx  │   │  │   ├── services/                 # Servicios encargados de consumir la API REST  │   │   ├── api.js                # Configuración base de axios/fetch  │   │   ├── paquetesService.js  │   │   └── repartidoresService.js  │   │  │   ├── theme/                    # Configuración del tema visual  │   │   └── ThemeProvider.jsx  │   │  │   ├── App.jsx                   # Configuración de rutas principales  │   ├── App.css  │   ├── main.jsx                  # Punto de entrada de React  │   ├── index.css  │   └── vite-env.d.ts (si aplica)  │  ├── package.json  ├── vite.config.js  ├── tailwind.config.js  ├── postcss.config.js  ├── eslint.config.js  └── README.md   `
+'''
+FRONTEND/
+├── public/
+│   ├── favicon.ico               # Ícono del sitio
+│   └── index.html                # Plantilla base de la SPA
+│
+├── src/
+│   ├── assets/                   # Imágenes, logos, fuentes y recursos estáticos
+│   │   └── (recursos gráficos del proyecto)
+│   │
+│   ├── components/               # Componentes reutilizables de UI y funcionalidad
+│   │   ├── EstadoPaquete.jsx
+│   │   ├── FormularioRastreo.jsx
+│   │   ├── MapaRastreo.jsx
+│   │   ├── MapaRepartidores.jsx
+│   │   ├── PaqueteForm.jsx
+│   │   ├── PaquetesTable.jsx
+│   │   │
+│   │   ├── layout/               # Estructura visual del panel administrativo
+│   │   │   ├── MainLayout.jsx
+│   │   │   ├── Navbar.jsx
+│   │   │   └── Sidebar.jsx
+│   │   │
+│   │   └── ui/                   # Componentes atómicos reutilizables
+│   │       ├── Button.jsx
+│   │       ├── Card.jsx
+│   │       └── FormInput.jsx
+│   │
+│   ├── hooks/                    # Hooks personalizados para lógica del frontend
+│   │   ├── usePaquetes.js
+│   │   └── useRepartidores.js
+│   │
+│   ├── pages/                    # Vistas asociadas a las rutas del sistema
+│   │   ├── AdminDashboard.jsx
+│   │   ├── Clientes.jsx
+│   │   ├── Configuracion.jsx
+│   │   ├── Dashboard.jsx
+│   │   ├── Incidencias.jsx
+│   │   ├── Mapa.jsx
+│   │   ├── PaginaRastreo.jsx
+│   │   ├── Paquetes.jsx
+│   │   ├── Rastreo.jsx
+│   │   ├── Repartidores.jsx
+│   │   └── Reportes.jsx
+│   │
+│   ├── services/                 # Servicios encargados de consumir la API REST
+│   │   ├── api.js                # Configuración base de axios/fetch
+│   │   ├── paquetesService.js
+│   │   └── repartidoresService.js
+│   │
+│   ├── theme/                    # Configuración del tema visual
+│   │   └── ThemeProvider.jsx
+│   │
+│   ├── App.jsx                   # Configuración de rutas principales
+│   ├── App.css
+│   ├── main.jsx                  # Punto de entrada de React
+│   ├── index.css
+│   └── vite-env.d.ts (si aplica)
+│
+├── package.json
+├── vite.config.js
+├── tailwind.config.js
+├── postcss.config.js
+├── eslint.config.js
+└── README.md
+'''
 
 ### Explicación
 
@@ -135,8 +199,29 @@ Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQL
 **theme/**Gestión del tema visual y configuraciones globales.
 
 ### Estructura general SERVER (Node.js + Express)
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   SERVER/  ├── config/                       # Configuraciones globales del backend  │   └── db.js                     # Conexión a MongoDB  │  ├── controllers/                  # Controladores (arquitectura MVC donde aplica)  │   ├── dashboard.controller.js  │   ├── paquetes.controller.js  │   └── repartidor.controller.js  │  ├── models/                       # Modelos Mongoose que definen la estructura de datos  │   ├── paquete.model.js  │   └── repartidor.model.js  │  ├── routes/                       # Rutas de la API REST  │   ├── dashboard.routes.js  │   ├── paquetes.routes.js  │   └── repartidor.routes.js  │  ├── index.js                      # Punto de entrada del servidor Express  ├── package.json  └── README.md   `
+'''
+SERVER/
+├── config/                       # Configuraciones globales del backend
+│   └── db.js                     # Conexión a MongoDB
+│
+├── controllers/                  # Controladores (arquitectura MVC donde aplica)
+│   ├── dashboard.controller.js
+│   ├── paquetes.controller.js
+│   └── repartidor.controller.js
+│
+├── models/                       # Modelos Mongoose que definen la estructura de datos
+│   ├── paquete.model.js
+│   └── repartidor.model.js
+│
+├── routes/                       # Rutas de la API REST
+│   ├── dashboard.routes.js
+│   ├── paquetes.routes.js
+│   └── repartidor.routes.js
+│
+├── index.js                      # Punto de entrada del servidor Express
+├── package.json
+└── README.md
+'''
 
 ### Explicación
 
